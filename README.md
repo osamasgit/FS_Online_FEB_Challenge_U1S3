@@ -29,7 +29,15 @@ En este ejercicio, aprenderás a crear una página web replicando el diseño de 
 
 A continuación, puedes ver la imagen de referencia que debes replicar en tu diseño:
 
-![Imagen de Referencia](img/planet-skin.png)
+![Imagen de Referencia](img/referencia-sk01.jpg)
+
+Ejemplo del diseño responsive:
+![Imagen Responsive](img/referencia-sk02_responsive.jpg)
+
+Además, encontrarás la imagen de fondo para trabajar en la misma carpeta de imágenes (debes añadir los botones, frases, etc.)
+
+Paciencia, seguramente no saldrá a la primera.
+
 
 ## Recursos Adicionales
 
