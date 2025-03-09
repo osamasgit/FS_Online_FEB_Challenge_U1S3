@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    top: 0;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    white-space: nowrap;
+}
+
+.menu {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+nav img{
+    width: 160px;
+    margin: 0;
+}
+
+.language-selector {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.language-selector select {
+    background-color: #e6999f;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.language-selector img {
+    width: 10px;
+}
+
+/*desing responsive for navbar */
+
+.menu-icon {
+    display: none;
+}
+
+
+/* Home section */
+#home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 70px;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+/* Carousel container */
+.carousel {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* images container */
+.carousel-images {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    animation: slide 30s infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* all images 100% width */
+.image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);
+}
+
+/* backgraound images */
+.img1 { background-image: url('img/sk_fondo.jpg'); }
+.img2 { background-image: url('img/sk_fondo.jpg'); }
+.img3 { background-image: url('img/sk_fondo.jpg'); }
+.img4 { background-image: url('img/sk_fondo.jpg'); }
+.img5 { background-image: url('img/sk_fondo.jpg'); }
+
+.carousel-pointer {
+    display: flex;   
+    justify-content: end;
+    position: relative;
+    gap: 10px;
+    margin-right: 100px;
+}
+
+.pointer {
+    width: 12px;
+    height:  12px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+    animation: pointers 30s infinite;
+    z-index: 2;
+}
+/* Carousel animation */
+@keyframes slide {
+    0%, 17% { transform: translateX(0%); }  /* Image 1 */
+    20%, 37% { transform: translateX(-20%); } /* Image 2 */
+    40%, 57% { transform: translateX(-40%); } /* Image 3 */
+    60%, 77% { transform: translateX(-60%); } /* Image 4 */
+    80%, 97% { transform: translateX(-80%); } /* Image 5 */
+    100% { transform: translateX(0%); } /* Image 1 */
+}
+
+/* Carousel pointers animation */
+@keyframes pointers {
+    0%, 99% { background-color: white; }
+    99%, 100% { background-color: transparent; }
+}
+
+.p1 { animation-delay: 0s; }
+.p2 { animation-delay: 5s; }
+.p3 { animation-delay: 11s; }
+.p4 { animation-delay: 17s; }
+.p5 { animation-delay: 23s; }
+
+/* Slogan text on top of carousel */
+.slogan {
+    position: relative;
+    color: white;
+    width: 100%;
+    text-align: left;
+    z-index: 2;
+}
+
+.slogan p {
+    font-size: 12px;
+}
+
+.btn-promos {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.btn-promos a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    width: fit-content;
+    padding: 15px 25px;
+    background-color: #e6999f;
+    font-weight: bold;
+}
+
+.club {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 15px 25px;
+    background-color: #e6999f;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 20px 30px;
+    position: fixed;
+    z-index: 1000;
+}
+
+@media (max-width: 480px){
+    .menu-icon {
+        display: block;
+        margin-left: 5%;
+    }
+    .menu {
+        display: none;
+    }
+
+    nav img {
+        margin-left: 25%;
+    }
+    .container {
+        flex-direction: column;
+    }
+}

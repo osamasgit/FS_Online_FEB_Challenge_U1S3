@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <title>Challenge U1S3</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li>LOGO</li>
+            <div class="menu-icon">&#9776;</div> <!-- Icono de menú -->
+            <img src="img/Logo.png" alt="Logo Planet Skin"> <!-- Logo -->
+            <ul class="menu">
                 <li>Cuidado Facial</li>
                 <li>Tipo de piel</li>
                 <li>Te preocupa</li>
@@ -19,13 +22,44 @@
                 <li>Novedades</li>
                 <li>Marcas</li>
             </ul>
+            <div class="language-selector">
+                <select>
+                    <option value="es"> Español</option>
+                    <option value="en"> English</option>
+                    <option value="fr"> Français</option>
+                </select>
+            </div>
         </nav>
     </header>
-    <Section>
-        <p>TODA SUS LÍNEAS YA DISPONIBLES</p>
-        <h1>SKIN1004: LA MARCA DE LA QUE TODO EL MUNDO HABLAD</h1>
-        <a href="#para_mi">¡PARA MI!</a>
-        <a href="#Skin_club">Planet Skin Club</a>
-    </Section>
+
+    <section id="home">
+        <div class="carousel">
+            <div class="carousel-images">
+                <div class="image img1"></div>
+                <div class="image img2"></div>
+                <div class="image img3"></div>
+                <div class="image img4"></div>
+                <div class="image img5"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="slogan">
+                <p>TODA SUS LÍNEAS YA DISPONIBLES</p>
+                <h1>SKIN1004: LA MARCA DE LA QUE TODO EL MUNDO HABLA</h1>
+                <div class="btn-promos">
+                    <a href="para-mi.html" target="_blank">¡PARA MI!</a>
+                </div>
+            </div>
+            <div class="carousel-pointer">
+                <div class="pointer p1"></div>
+                <div class="pointer p2"></div>
+                <div class="pointer p3"></div>
+                <div class="pointer p4"></div>
+                <div class="pointer p5"></div>
+            </div>
+        </div>
+    </section>
+    <div class="club"><a href="planet-club.html" target="_blank">Planet Skin Club</a></div>
+    
 </body>
 </html>
